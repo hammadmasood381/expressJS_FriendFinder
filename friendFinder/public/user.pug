@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title User - FriendFinder
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700")
+        link(rel="stylesheet", href="/style.css")
+    body(class="lato")
+        header
+            div(class="header container")
+                div
+                    h1 FriendFinder
+                div
+                    a(class="",href="/") Home
+                    a(class="",href="/survey") Survey
+                    a(class="",href="/api/friends") API
+        section
+            div(class="container text_center")
+                h2 FriendFinder Match
+                br
+                br
+                br
+                br
+                h4 You
+                    div(class="matchbox")
+                        p Name: #{you.name}
+                        br
+                        a(href="/user/"+you.uuid,class="matchlink")
+                            p uuid: #{you.uuid}
+                        br
+                        img(src=you.photo, alt=you.name,class="matchphoto")
+                br
+                br
+                br
+                br
+                h4 Your Match
+                    div(class="matchbox")
+                        p Name: #{yourmatch.name}
+                        br
+                        a(href="/user/"+yourmatch.uuid,class="matchlink")
+                            p uuid: #{yourmatch.uuid}
+                        br
+                        img(src=yourmatch.photo, alt=yourmatch.name,class="matchphoto")

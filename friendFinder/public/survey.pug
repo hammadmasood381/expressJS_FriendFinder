@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Survey - FriendFinder
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700")
+        link(rel="stylesheet", href="/style.css")
+    body(class="lato")
+        header
+            div(class="header container")
+                div
+                    h1 FriendFinder
+                div
+                    a(class="",href="/") Home
+                    a(class="",href="/survey") Survey
+                    a(class="",href="/api/friends") API
+        section
+            div(class="container text_center")
+                h1 Survey
+                br
+                div
+                    p 1 - Stongly Agree
+                    br
+                    p 2 - Agree
+                    br
+                    p 3 - Neutral
+                    br
+                    p 4 - Strongly Disagree
+                    br
+                    p 5 - Disagree
+                    br
+                br
+                form(class="",method="post",action="/api/friends")
+                    div(class="fields")
+                        label(for="") Name
+                        br
+                        input(class="text_center",name="name",type="text",placeholder="name")
+                    div(class="fields")
+                        label(for="") Photo Url
+                        br
+                        input(class="text_center",name="photo",type="text",placeholder="photo url")
+                    div(class="fields")
+                        label(for="") Question 1
+                        br
+                        input(class="text_center",name="question1",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 2
+                        br
+                        input(class="text_center",name="question2",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 3
+                        br
+                        input(class="text_center",name="question3",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 4
+                        br
+                        input(class="text_center",name="question4",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 5
+                        br
+                        input(class="text_center",name="question5",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 6 
+                        br
+                        input(class="text_center",name="question6",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 7
+                        br
+                        input(class="text_center",name="question7",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 8
+                        br
+                        input(class="text_center",name="question8",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 9
+                        br
+                        input(class="text_center",name="question9",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        label(for="") Question 10
+                        br
+                        input(class="text_center",name="question10",type="number",placeholder="1 - 5",min="1",max="5")
+                    div(class="fields")
+                        input(class="submitbutton",type="submit")
+                    

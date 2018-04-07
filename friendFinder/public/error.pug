@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Error - FriendFinder
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700")
+        link(rel="stylesheet", href="/style.css")
+    body(class="lato")
+        header
+            div(class="header container")
+                div
+                    h1 FriendFinder
+                div
+                    a(class="",href="/") Home
+                    a(class="",href="/survey") Survey
+                    a(class="",href="/api/friends") API
+        section
+            div(class="container text_center")
+                h2 Error
+                h3= errordesc
+                br
+                br
+                if(useruuid)
+                    h6 come back to this url later
+                    br
+                    a(href="/"+useruuid)
+                        p #{useruuid}
+                    p (right click link and click copy link address)
+                br
+                br
+                br
+                br
